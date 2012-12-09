@@ -64,3 +64,11 @@ example of french thesis document; and - documentation.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
++ Revision: 779720
+- Import texlive-droit-fr
+- Import texlive-droit-fr
+
