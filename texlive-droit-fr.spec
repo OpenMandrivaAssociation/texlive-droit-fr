@@ -1,11 +1,11 @@
-# revision 25419
+# revision 30356
 # category Package
 # catalog-ctan /macros/latex/contrib/droit-fr
-# catalog-date 2012-02-17 14:36:29 +0100
+# catalog-date 2013-05-09 13:28:31 +0200
 # catalog-license lppl1.3
-# catalog-version 0.1
+# catalog-version 0.2
 Name:		texlive-droit-fr
-Version:	0.1
+Version:	0.2
 Release:	1
 Summary:	Document class and bibliographic style for French law
 Group:		Publishing
@@ -37,10 +37,10 @@ example of french thesis document; and - documentation.
 %{_texmfdistdir}/tex/latex/droit-fr/droit-fr.bbx
 %{_texmfdistdir}/tex/latex/droit-fr/droit-fr.cbx
 %{_texmfdistdir}/tex/latex/droit-fr/droit-fr.cls
-%doc %{_texmfdistdir}/doc/latex/droit-fr/doc/.latexmkrc
-%doc %{_texmfdistdir}/doc/latex/droit-fr/doc/README
-%doc %{_texmfdistdir}/doc/latex/droit-fr/doc/droit-fr.pdf
-%doc %{_texmfdistdir}/doc/latex/droit-fr/doc/droit-fr.tex
+%doc %{_texmfdistdir}/doc/latex/droit-fr/.latexmkrc
+%doc %{_texmfdistdir}/doc/latex/droit-fr/README
+%doc %{_texmfdistdir}/doc/latex/droit-fr/droit-fr.pdf
+%doc %{_texmfdistdir}/doc/latex/droit-fr/droit-fr.tex
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/.latexmkrc
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/annexes.tex
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/bibliographie.bib
@@ -53,7 +53,9 @@ example of french thesis document; and - documentation.
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/misc.tex
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/partie1.tex
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/partie2.tex
+%doc %{_texmfdistdir}/doc/latex/droit-fr/example/sommaire.tex
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/titre.tex
+%doc %{_texmfdistdir}/doc/latex/droit-fr/example/toc.tex
 
 #-----------------------------------------------------------------------
 %prep
@@ -64,11 +66,3 @@ example of french thesis document; and - documentation.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 779720
-- Import texlive-droit-fr
-- Import texlive-droit-fr
-
