@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-droit-fr
 Version:	0.1
-Release:	1
+Release:	2
 Summary:	Document class and bibliographic style for French law
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/droit-fr
