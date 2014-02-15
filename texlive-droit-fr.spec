@@ -1,12 +1,12 @@
-# revision 30356
+# revision 32918
 # category Package
 # catalog-ctan /macros/latex/contrib/droit-fr
-# catalog-date 2013-05-09 13:28:31 +0200
+# catalog-date 2014-02-08 13:46:42 +0100
 # catalog-license lppl1.3
-# catalog-version 0.2
+# catalog-version 0.4
 Name:		texlive-droit-fr
-Version:	0.2
-Release:	5
+Version:	0.4
+Release:	1
 Summary:	Document class and bibliographic style for French law
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/droit-fr
@@ -20,9 +20,10 @@ Requires(post):	texlive-kpathsea
 
 %description
 The bundle provides a toolkit intended for students writing a
-thesis in French law. It features: - a LaTeX document class; -
-a bibliographic style for Biblatex package; - a practical
-example of french thesis document; and - documentation.
+thesis in French law. It features: a LaTeX document class; a
+bibliographic style for Biblatex package; a practical example
+of french thesis document; and documentation. The class assumes
+use of biber and biblatex.
 
 %post
     %{_sbindir}/texlive.post
@@ -38,6 +39,7 @@ example of french thesis document; and - documentation.
 %{_texmfdistdir}/tex/latex/droit-fr/droit-fr.cbx
 %{_texmfdistdir}/tex/latex/droit-fr/droit-fr.cls
 %doc %{_texmfdistdir}/doc/latex/droit-fr/.latexmkrc
+%doc %{_texmfdistdir}/doc/latex/droit-fr/CHANGELOG
 %doc %{_texmfdistdir}/doc/latex/droit-fr/README
 %doc %{_texmfdistdir}/doc/latex/droit-fr/droit-fr.pdf
 %doc %{_texmfdistdir}/doc/latex/droit-fr/droit-fr.tex
@@ -49,6 +51,7 @@ example of french thesis document; and - documentation.
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/glossaire.tex
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/index.tex
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/introduction.tex
+%doc %{_texmfdistdir}/doc/latex/droit-fr/example/journaux.bib
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/main.tex
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/misc.tex
 %doc %{_texmfdistdir}/doc/latex/droit-fr/example/partie1.tex
