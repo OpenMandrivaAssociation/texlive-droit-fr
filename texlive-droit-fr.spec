@@ -1,12 +1,6 @@
-# revision 32918
-# category Package
-# catalog-ctan /macros/latex/contrib/droit-fr
-# catalog-date 2014-02-08 13:46:42 +0100
-# catalog-license lppl1.3
-# catalog-version 0.4
 Name:		texlive-droit-fr
-Version:	0.4
-Release:	5
+Version:	1.2
+Release:	1
 Summary:	Document class and bibliographic style for French law
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/droit-fr
@@ -35,30 +29,8 @@ use of biber and biblatex.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/droit-fr/droit-fr.bbx
-%{_texmfdistdir}/tex/latex/droit-fr/droit-fr.cbx
-%{_texmfdistdir}/tex/latex/droit-fr/droit-fr.cls
-%doc %{_texmfdistdir}/doc/latex/droit-fr/.latexmkrc
-%doc %{_texmfdistdir}/doc/latex/droit-fr/CHANGELOG
-%doc %{_texmfdistdir}/doc/latex/droit-fr/README
-%doc %{_texmfdistdir}/doc/latex/droit-fr/droit-fr.pdf
-%doc %{_texmfdistdir}/doc/latex/droit-fr/droit-fr.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/.latexmkrc
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/annexes.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/bibliographie.bib
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/bibliographie.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/conclusion.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/glossaire.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/index.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/introduction.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/journaux.bib
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/main.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/misc.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/partie1.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/partie2.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/sommaire.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/titre.tex
-%doc %{_texmfdistdir}/doc/latex/droit-fr/example/toc.tex
+%{_texmfdistdir}/tex/latex/droit-fr
+%doc %{_texmfdistdir}/doc/latex/droit-fr
 
 #-----------------------------------------------------------------------
 %prep
