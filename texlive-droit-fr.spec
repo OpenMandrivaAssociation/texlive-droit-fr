@@ -3,7 +3,7 @@ Version:	39802
 Release:	2
 Summary:	Document class and bibliographic style for French law
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/droit-fr
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/droit-fr
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/droit-fr.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/droit-fr.doc.r%{version}.tar.xz
