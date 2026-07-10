@@ -1,43 +1,25 @@
-Name:		texlive-droit-fr
-Version:	39802
-Release:	2
+%global tl_name droit-fr
+%global tl_revision 39802
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	1.2
+Release:	%{tl_revision}.1
 Summary:	Document class and bibliographic style for French law
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/droit-fr
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/droit-fr.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/droit-fr.doc.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/droit-fr.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/droit-fr.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The bundle provides a toolkit intended for students writing a
-thesis in French law. It features: a LaTeX document class; a
-bibliographic style for Biblatex package; a practical example
-of french thesis document; and documentation. The class assumes
-use of biber and biblatex.
+The bundle provides a toolkit intended for students writing a thesis in
+French law. It features: a LaTeX document class; a bibliographic style
+for BibLaTeX package; a practical example of french thesis document; and
+documentation. The class assumes use of biber and BibLaTeX.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/droit-fr
-%doc %{_texmfdistdir}/doc/latex/droit-fr
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
